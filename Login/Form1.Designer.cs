@@ -34,22 +34,24 @@
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.checkBoxshowpassword = new System.Windows.Forms.CheckBox();
             this.btnlogin = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Wide Latin", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(123, 38);
+            this.lblLogin.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.Location = new System.Drawing.Point(187, 38);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(195, 34);
+            this.lblLogin.Size = new System.Drawing.Size(95, 33);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "LOGIN";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.btnclose);
             this.panel1.Controls.Add(this.lblLogin);
             this.panel1.Location = new System.Drawing.Point(-19, 6);
             this.panel1.Name = "panel1";
@@ -95,6 +97,16 @@
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = true;
             // 
+            // btnclose
+            // 
+            this.btnclose.Location = new System.Drawing.Point(359, 38);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(37, 32);
+            this.btnclose.TabIndex = 1;
+            this.btnclose.Text = "X";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -125,6 +137,7 @@
         private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.CheckBox checkBoxshowpassword;
         private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.Button btnclose;
     }
 }
 
