@@ -19,7 +19,14 @@ namespace Login
 
         private void btnclose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Hide();
         }
     }
 }

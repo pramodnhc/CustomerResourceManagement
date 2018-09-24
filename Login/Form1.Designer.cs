@@ -30,11 +30,11 @@
         {
             this.lblLogin = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnclose = new System.Windows.Forms.Button();
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.checkBoxshowpassword = new System.Windows.Forms.CheckBox();
             this.btnlogin = new System.Windows.Forms.Button();
-            this.btnclose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(447, 106);
             this.panel1.TabIndex = 1;
+            // 
+            // btnclose
+            // 
+            this.btnclose.Location = new System.Drawing.Point(359, 38);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(37, 32);
+            this.btnclose.TabIndex = 1;
+            this.btnclose.Text = "X";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // txtusername
             // 
@@ -96,16 +106,7 @@
             this.btnlogin.TabIndex = 5;
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = true;
-            // 
-            // btnclose
-            // 
-            this.btnclose.Location = new System.Drawing.Point(359, 38);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(37, 32);
-            this.btnclose.TabIndex = 1;
-            this.btnclose.Text = "X";
-            this.btnclose.UseVisualStyleBackColor = true;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // Form1
             // 
