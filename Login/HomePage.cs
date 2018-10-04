@@ -38,5 +38,12 @@ namespace Login
             ManageProduct manageproduct = new ManageProduct();
             manageproduct.Show();
         }
+
+        private void addCategoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCategory addcategory = new AddCategory();
+            this.Hide();
+            addcategory.Show();
+        }
     }
 }

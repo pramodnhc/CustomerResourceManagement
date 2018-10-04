@@ -113,6 +113,7 @@
             this.addCategoriesToolStripMenuItem.Name = "addCategoriesToolStripMenuItem";
             this.addCategoriesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.addCategoriesToolStripMenuItem.Text = "Add Categories";
+            this.addCategoriesToolStripMenuItem.Click += new System.EventHandler(this.addCategoriesToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
