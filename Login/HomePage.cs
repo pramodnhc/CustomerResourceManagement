@@ -32,5 +32,11 @@ namespace Login
             addproductform.Show();
 
         }
+
+        private void manageProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageProduct manageproduct = new ManageProduct();
+            manageproduct.Show();
+        }
     }
 }

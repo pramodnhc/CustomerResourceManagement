@@ -30,20 +30,20 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.catrgoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.manageProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.catrgoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.manageCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.editCustomerDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.manageCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.placeOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.viewOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,40 +79,6 @@
             this.productToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.productToolStripMenuItem.Text = "Product";
             // 
-            // catrgoriesToolStripMenuItem
-            // 
-            this.catrgoriesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addCategoriesToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.manageCategoriesToolStripMenuItem});
-            this.catrgoriesToolStripMenuItem.Name = "catrgoriesToolStripMenuItem";
-            this.catrgoriesToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
-            this.catrgoriesToolStripMenuItem.Text = "Categories";
-            // 
-            // customerToolStripMenuItem
-            // 
-            this.customerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewCustomerToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.editCustomerDetailsToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.manageCustomerToolStripMenuItem});
-            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
-            this.customerToolStripMenuItem.Text = "Customer";
-            // 
-            // orderToolStripMenuItem
-            // 
-            this.orderToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.placeOrderToolStripMenuItem,
-            this.toolStripSeparator5,
-            this.viewOrderToolStripMenuItem,
-            this.toolStripSeparator6,
-            this.printOrderToolStripMenuItem});
-            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            this.orderToolStripMenuItem.Text = "Order";
-            // 
             // addProductToolStripMenuItem
             // 
             this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
@@ -130,6 +96,17 @@
             this.manageProductToolStripMenuItem.Name = "manageProductToolStripMenuItem";
             this.manageProductToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.manageProductToolStripMenuItem.Text = "Manage Product";
+            this.manageProductToolStripMenuItem.Click += new System.EventHandler(this.manageProductToolStripMenuItem_Click);
+            // 
+            // catrgoriesToolStripMenuItem
+            // 
+            this.catrgoriesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addCategoriesToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.manageCategoriesToolStripMenuItem});
+            this.catrgoriesToolStripMenuItem.Name = "catrgoriesToolStripMenuItem";
+            this.catrgoriesToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.catrgoriesToolStripMenuItem.Text = "Categories";
             // 
             // addCategoriesToolStripMenuItem
             // 
@@ -147,6 +124,18 @@
             this.manageCategoriesToolStripMenuItem.Name = "manageCategoriesToolStripMenuItem";
             this.manageCategoriesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.manageCategoriesToolStripMenuItem.Text = "Manage Categories";
+            // 
+            // customerToolStripMenuItem
+            // 
+            this.customerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewCustomerToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.editCustomerDetailsToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.manageCustomerToolStripMenuItem});
+            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.customerToolStripMenuItem.Text = "Customer";
             // 
             // addNewCustomerToolStripMenuItem
             // 
@@ -176,32 +165,44 @@
             this.manageCustomerToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
             this.manageCustomerToolStripMenuItem.Text = "Manage Customer";
             // 
+            // orderToolStripMenuItem
+            // 
+            this.orderToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.placeOrderToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.viewOrderToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.printOrderToolStripMenuItem});
+            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
+            this.orderToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.orderToolStripMenuItem.Text = "Order";
+            // 
             // placeOrderToolStripMenuItem
             // 
             this.placeOrderToolStripMenuItem.Name = "placeOrderToolStripMenuItem";
-            this.placeOrderToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.placeOrderToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.placeOrderToolStripMenuItem.Text = "Place Order";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(213, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(158, 6);
             // 
             // viewOrderToolStripMenuItem
             // 
             this.viewOrderToolStripMenuItem.Name = "viewOrderToolStripMenuItem";
-            this.viewOrderToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.viewOrderToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.viewOrderToolStripMenuItem.Text = "View Order";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(213, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(158, 6);
             // 
             // printOrderToolStripMenuItem
             // 
             this.printOrderToolStripMenuItem.Name = "printOrderToolStripMenuItem";
-            this.printOrderToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.printOrderToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.printOrderToolStripMenuItem.Text = "Print Order";
             // 
             // logoutToolStripMenuItem
@@ -215,7 +216,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
